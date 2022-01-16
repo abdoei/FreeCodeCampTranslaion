@@ -1,9 +1,3 @@
-مُحرر دوّن هو محرر ماركداون (Markdown) سهل للغاية، لا يحتاج منك أي جهد لتعلم الكتابة به. فقط اكتب أو عدّل هذا النص!
-يمكنك إدراج رابط بهذا الشكل: [نص الرابط](http://example.com). كما يمكنك أيضا **تثخين** النص، أو *إمالته* أو حتى جعله ~~مشطبا~~ إن احتجت لذلك :
-
-
-
-
 # كيف تكتب ملف README.md مناسب لمشروع  GitHub القادم!
 
 أذكر أنه عندما تعرفت أول مرة على GitHub، لم يكن لدي فكرة عن ماهيته ولا عما يمكن له فعله. لا داعي لأن تخبر أحدًا أني قد أنشأت حسابي الخاص على هذه المنصة لأنه قيل لي أنه يجب على كل مطور برمجيات امتلاك حسابٍ خاص عند رفع الكود الخاص به على المنصة.
@@ -22,8 +16,6 @@
 
 ببساطة يمكننا وصف ملف README كدليل يمنح المستخدمين وصفًا تفصيليًا للمشروع الذي تعمل عليه.
 
-In simple words, we can describe a README file as a guide that gives users a detailed description of a project you have worked on.
-
 يمكن أيضًا وصفه بأنه نوع من التوثيق مع إرشادات حول كيفية استخدام المشروع. عادةً ما تحتوي على إرشادات حول كيفية تثبيت المشروع وتشغيله.
 
 من الضروري لك كمطور أن تعرف كيفية توثيق مشروعك عن طريق كتابة ملف README للأسباب التالية:
@@ -33,66 +25,59 @@ In simple words, we can describe a README file as a guide that gives users a det
 - سيساعدك على التركيز على ما يجب على مشروعك إنجازه وكيفية إنجازه.
 - ستعمل على تحسين مهاراتك في الكتابة.
 
-أثناء العمل في مشروع ما، ضع في اعتبارك أنك ستحتاج أن تجعل المطورين الآخرين **يفهمون** الكود الخاص بك وما يفعله الكود. لذا فإن إرفاقه بدليل إضافي (الملف التعريفي) سيكون مفيدًا جدًا.
+	أثناء العمل في مشروع ما، ضع في اعتبارك أنك ستحتاج أن تجعل المطورين الآخرين **يفهمون** الكود الخاص بك وما يفعله الكود. لذا فإن إرفاقه بدليل إضافي (الملف التعريفي) سيكون مفيدًا جدًا.
 
-For instance, my earlier shared example of my [first project](https://github.com/larymak/ToDo-list-App/tree/v1.0) does not have a good README. And even though the project was amazing, it would've been hard for a beginner to understand exactly what was expected when they cloned my repo. Who knows maybe it could've even been a coded virus.
+وعلى سبيل المثال، المثال الذي قمت بضربه سابقًا عن [مشروعي الأول](https://github.com/larymak/ToDo-list-App/tree/v1.0) على GitHub  لا يحتوي على ملف README جيد. وعلى الرغم من أن المشروع كان مذهلاً، فقد كان من الصعب على المبتدئين أن يفهموا بالضبط ماذا يفعل الكود عندما قاموا باستنساخ مستودع الكود (Repository) الخاص بي. من يدري ربما كان من الممكن أن يكون فيروساً مشفرًا، أمزح بالتأكيد!
 
-With a project like this on GitHub, no matter how amazing it is, other devs won't be eager to work on it and try to figure it out without a good README.
+كالعادة مشروعٌ مثل هذا على GitHub، بغض النظر عن مدى روعته، لن يكونَ المطوِرُون الآخرون متحمسين للعمل عليه ومحاولة اكتشافه بدون قراءة جيدة.
 
-Now, have a look at this [project](https://github.com/larymak/Html-Css-Recap). Here, you are able to understand what the project does, what it entails, and how to get started if you need to use or want to contribute to the project.
+الآن، لتلقي نظرة على هذا [المشروع](https://github.com/larymak/Html-Css-Recap). بالطبع أنت قادر على فهم ما يفعله المشروع، وما يستلزمه، وكيفية البدء إذا كنت بحاجة إلى استخدام المشروع أو تريد المساهمة فيه (Contribution).
 
-You see, that's how powerful a well written README is and how it can change you project.
+كما ترى في المشروع السابق، هذا هو مدى قوة README المكتوب جيدًا وكيف يمكن أن يغير مشروعك. لذا ، دعنا نبدأ في كيفية كتابة ملف README الإحترافي الخاص بك.
 
-So, let's get started on how to write one for you too.
+## كيف نكتب ملف README خطوة بخطوة!
 
-## How to Write a Good README – a Step by Step Guide
+من المهم جدًا معرفة أنه لا توجد طريقة صحيحة واحدة فقط لبناء ملف RM جيد. ولكن الطريقة الأسوء على الإطلاق هي عدم تضمين التمهيدي من الأساس.
 
-A very important thing to note is that there's not one right way to structure a good README. But there is one very wrong way, and that is to not include a README at all.
+من خلال البحث ودراسة ملفات README المختلفة، هناك بالتأكيد بعض أفضل الممارسات (best practices) التي وجدتها. وهذا ما سأشاركه. كما أقول لنفسي عادة:
 
-From research and studying various README files, for sure there are some best practices that I have found. And that's what I will be sharing. As I usually tell my self:
+> كل يوم هو يوم مخصص للتعلم.
 
-> Every day is a learning day.
+لذلك كلما تقدمت وتطورت في حياتك المهنية، ستُطَور أفكارك الخاصة حول ما الذي يجعل ملف RM الجيد جيدًا وكيفية تحسينه. ربما ستخرج لنا بطريقتك الفريدة!
 
-So as you progress and advance in your career, you will develop your own ideas about what makes a good README and how to improve on it. Perhaps you'll even come up with your own unique guide.
+قبل أن نبدأ، من المهم أيضًا ملاحظة أنه عند كتابة ملف README لمشروعك، يجب أن يكون محتوى الملف قادرًا على الإجابة على ثلاث أسئلة: **ماذا** و **لماذا** و **كيف**.
 
-Before we get started, it is also important to note that when you're writing your project's README, it should be able to answer the **what**, **why**, and the **how** of the project.
+فيما يلي بعض الأسئلة الإرشادية التي ستساعدك أثناء كتابة الملف:
+- ماذا كان دافعك (الحافز)؟
+- لماذا بنيت هذا المشروع (السبب)؟
+- ما المشكلة التي يعالجها المشروع (المشكلة)؟
+- ماذا تعلمت (المردود)؟
+- ما الذي يميز مشروعك (التميُّز)؟
 
-Here are some guide questions that will help you out:
+إذا كان مشروعك يحتوي على الكثير من الميزات (Features)، ففكر في إضافة قسم "الميزات" وإدراجها فيه.
 
--   What was your motivation?
--   Why did you build this project?
--   What problem does it solve?
--   What did you learn?
--   What makes your project stand out?  
-    If your project has a lot of features, consider adding a "Features" section and listing them here.
+## ما يجب تضمينه في ملف README؟
 
-## What to Include in your README
+### 1. عنوان المشروع
+وهو اسم المشروع، ويصف المشروع بالكامل في جملة واحدة، ويساعد الأشخاص على فهم **ما** الهدف الرئيسي من المشروع.
 
-### 1. Project's Title
+### 2. وصف المشروع
+وهو عنصر مهم في مشروعك، غالبًا ما يغفل عنه العديد من المطورين الجدد.
 
-This is the name of the project. It describes the whole project in one sentence, and helps people understand **what** the main goal and aim of the project is.
+الوصف الخاص بك هو جزء مهم للغاية من مشروعك حيث يسمح لك الوصف الدقيق بإظهار عملك للمطورين الآخرين وكذلك لأصحاب العمل المحتملين بطريقة أكثر تفصيلا من العنوان وأقل تعقيدا من الكود.
 
-### 2. Project Description
+غالبًا ما تميز جودة وصف README المشروع الجيد عن المشروع السيئ. الملف المُتقَن هو الذي يستفيد من فرصة الشرح وعرض المشروع بطريقة حسنة لمن يقرأه، وعرض ما يلي:
 
-This is an important component of your project that many new developers often overlook.
+-   ماذا يفعلُ تطبيقك؟
+-   لماذا اخترت هذه التكنولوجيا بالذات لتنفيذ التطبيق؟
+-   بعض التحديات التي واجهتك والميزات التي تريد تنفيذها في المستقبل.
 
-Your description is an extremely important aspect of your project. A well-crafted description allows you to show off your work to other developers as well as potential employers.
+### 3. جدول المحتويات (كالفهرس المختصر) (اختياري)
+إذا كان ملف README الخاص بمشروعك طويلاً جدًا، فقد ترغب في إضافة جدول للمحتويات لتسهيل انتقال المستخدمين إلى الأقسام المختلفة داخل الملف بسهولة. سيسهل ذلك على القراء التنقل في المشروع بسهولة.
+### 4. كيفية تثبيت وتشغيل المشروع
+إذا كنت تعمل على مشروع يحتاج المستخدم تثبيته أو تشغيله محليًا في جهاز مثل "جهاز الكاشير" في متاجر التجزئة، فيجب عليك تضمين الخطوات المطلوبة لتثبيت مشروعك وكذلك الملفات والبرامج الأخرى المكملة إن وجدت.
 
-The quality of a README description often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase:
-
--   What your application does,
--   Why you used the technologies you used,
--   Some of the challenges you faced and features you hope to implement in the future.
-
-### 3. Table of Contents (Optional)
-
-If your README is very long, you might want to add a table of contents to make it easy for users to navigate to different sections easily. It will make it easier for readers to move around the project with ease.
-
-### 4. How to Install and Run the Project
-
-If you are working on a project that a user needs to install or run locally in a machine like a "POS", you should include the steps required to install your project and also the required dependencies if any.
-
-Provide a step-by-step description of how to get the development environment set and running.
+باختصار، قَدِّم وصفًا تفصيليًا لكيفية ضبط وتشغيل بيئة التطوير اللازمة لكي يعمل مشروعك.
 
 ### 5. How to Use the Project
 
@@ -177,4 +162,3 @@ Connect With me at [Twitter](https://twitter.com/larymak1) | [YouTube](https://w
 Do share your valuable opinion, I appreciate your honest feedback!
 
 Enjoy Coding ❤
-
